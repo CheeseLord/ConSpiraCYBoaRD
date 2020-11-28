@@ -1,3 +1,14 @@
+########################################
+# Custom stuff for our repo
+
+# Insert your own script here to activate your venv, if you like.
+activate_venv
+
+
+
+########################################
+# Default Python .gitignore stuff
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
