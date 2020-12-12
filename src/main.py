@@ -13,9 +13,8 @@ class ConspiracyBoard(ScatterLayout):
 
 class ConspiracyBoardApp(App):
     def build(self):
-        # TODO set title in ConSpiraCYCaSE
+        self.title = 'ConSpiraCYBoaRD'
         return ConspiracyBoard()
-        #return Label(text='Hello, world!')
 
 
 if __name__ == '__main__':
