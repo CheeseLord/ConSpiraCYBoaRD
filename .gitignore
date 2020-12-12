@@ -1,6 +1,10 @@
 ########################################
 # Custom stuff for our repo
 
+# vim swap files
+.*.sw[nop]
+.sw[nop]
+
 # Insert your own script here to activate your venv, if you like.
 activate_venv
 
