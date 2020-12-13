@@ -4,11 +4,12 @@ from kivy.lang import Builder
 from kivy.uix.label import Label
 #from kivy.uix.screenmanager import Screen
 from kivy.uix.scatterlayout import ScatterLayout
+from kivy.uix.floatlayout import FloatLayout
 
 kivy.require('2.0.0')
 
 
-class ConspiracyBoard(ScatterLayout):
+class ConspiracyBoard(FloatLayout):
     pass
 
 class ConspiracyBoardApp(App):
