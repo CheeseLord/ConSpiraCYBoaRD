@@ -3,8 +3,9 @@
 
     Widget:
         Scatter:
-            id: spoon
+            id: spoon_scatter
             size_hint: None, None
+            size: spoon.size
             pos: (100, 200)
 
             canvas:
@@ -13,15 +14,17 @@
 
                 Rectangle:
                     pos: 0, 0
-                    size: self.size
+                    size: spoon_scatter.size
 
             Label:
+                id: spoon
                 text: 'My spoon is too big'
-                text_size: self.width, None
+                size: 150, 20
 
         Scatter:
-            id: banana
+            id: banana_scatter
             size_hint: None, None
+            size: banana.size
             pos: (300, 100)
 
             canvas:
@@ -30,17 +33,19 @@
 
                 Rectangle:
                     pos: 0, 0
-                    size: self.size
+                    size: banana_scatter.size
 
             Label:
+                id: banana
                 text: 'I am a banana'
-                text_size: self.width, None
+                size: 110, 20
 
         Scatter:
-            id: image
             size_hint: None, None
+            size: image.size
 
             Image:
+                id: image
                 source: 'assets/test.png'
-                size: (100, 100)
+                size: (200, 200)
 
