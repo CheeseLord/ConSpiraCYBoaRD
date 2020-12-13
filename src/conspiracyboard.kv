@@ -1,6 +1,15 @@
 #:kivy 2.0.0
 <ConspiracyBoard>:
+
     Widget:
+        canvas:
+            Color:
+                rgba: 0, 0, 1, 1    # Blue
+
+            # size and position of Canvas
+            Rectangle:
+                pos: self.pos
+                size: self.size
 
         Scatter:
             id: scatter
@@ -18,6 +27,7 @@
             Label:
                 text: 'I am a banana'
                 text_size: self.width, None
+
 
         Scatter:
             id: scatter3
