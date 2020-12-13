@@ -2,40 +2,45 @@
 <ConspiracyBoard>:
 
     Widget:
-        size_hint: 0.25, 0.25
-        canvas:
-            Color:
-                rgba: 0, 0, 1, 1    # Blue
-
-            # size and position of Canvas
-            Rectangle:
-                pos: self.pos
-                size: self.size
-
         Scatter:
-            id: scatter
+            id: spoon
             size_hint: None, None
-            pos: (200, 200)
+            pos: (100, 200)
+
+            canvas:
+                Color:
+                    rgba: 1, 0.8, 0, 1    # Blue
+
+                Rectangle:
+                    pos: 0, 0
+                    size: self.size
 
             Label:
                 text: 'My spoon is too big'
                 text_size: self.width, None
 
         Scatter:
-            id: scatter2
+            id: banana
             size_hint: None, None
+            pos: (300, 100)
+
+            canvas:
+                Color:
+                    rgba: 1, 0.8, 0, 1    # Blue
+
+                Rectangle:
+                    pos: 0, 0
+                    size: self.size
 
             Label:
                 text: 'I am a banana'
                 text_size: self.width, None
 
-
         Scatter:
-            id: scatter3
+            id: image
             size_hint: None, None
 
             Image:
                 source: 'assets/test.png'
                 size: (100, 100)
-
 
